@@ -1,0 +1,81 @@
+/* Basic styles and resets */
+body {
+    background: linear-gradient(to left, #4b79a1, #283e51);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+}
+
+/* Container styling */
+.container {
+    width: 90%;
+    max-width: 450px;
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 9px 9px 10px black;
+}
+
+/* Header styling */
+.header-text1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+.text-1, .text-2, .text-3, .text-4 {
+    display: block;
+    margin: 10px 0;
+}
+
+/* Input styling */
+.bill-amount, .discount-percentage, .dis-amount, .final-amount {
+    width: calc(100% - 20px);
+    margin: 10px 10px;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+}
+
+/* Button styling */
+.cal-btn, .reset-btn {
+    width: calc(100% - 20px);
+    height: 40px;
+    margin: 20px 10px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.cal-btn {
+    background-color: blue;
+}
+
+.reset-btn {
+    background-color: green;
+}
+
+.cal-btn:hover, .reset-btn:hover {
+    opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (min-width: 600px) {
+    .container {
+        width: 80%;
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 70%;
+        max-width: 600px;
+    }
+}

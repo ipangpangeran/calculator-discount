@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Kalkulator Diskon</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header-text1">Kalkulator Hitung Diskon</h1>
+        <div>
+            <label for="bill_amount" class="text-1">Harga Asli:</label>
+            <input type="number" id="bill_amount" class="bill-amount" required>
+        </div>
+        <div>
+            <label for="discount_percentage" class="text-2">Discount (%):</label>
+            <input type="number" id="discount_percentage" class="discount-percentage" required>
+        </div>
+        <button id="calculate_btn" class="cal-btn">Hitung</button>
+        <div>
+            <label for="discount_amount" class="text-3">Potongan Discount:</label>
+            <input type="text" id="discount_amount" class="dis-amount" disabled>
+        </div>
+        <div>
+            <label for="final_amount" class="text-4">Harga Setelah Discount:</label>
+            <input type="text" id="final_amount" class="final-amount" disabled>
+        </div>
+        <button id="reset_btn" class="reset-btn">Reset</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
